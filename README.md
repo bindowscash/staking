@@ -9,7 +9,7 @@ Security features of the contracts:
 - The contracts cannot self-destruct, and cannot be called via a delegatecall.
 - The contracts are not deployed behind a proxy, so they are not immutable and not upgradeable.
 - Users can either withdraw their rewards only, or their staked tokens + their rewards within one transaction.
-- There is no expiration on deposits/withdrawals. Users can deposit or withdraw whenever they want.
+- There is no expiration on deposits/withdrawals. Users can stake or unstake whenever they want.
 - All the contracts are public and verified on the blockchains, ensuring transparency and security.
 
 The vault is funded by 2 sources:
