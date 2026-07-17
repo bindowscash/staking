@@ -1,6 +1,7 @@
-# BindowsCash Staking Pool
+# BindowsCash Staking Vault
 
 BindowsCash is not only a mixer, but it allows $BINDOWS holders to stake their tokens into the vault.
+Stake $BINDOWS, earn BNB.
 
 Key Features & Specifications of the staking contract:
 - Post-Deployment Token Binding: The staking token address is initialized once by the developer after deployment.
@@ -24,12 +25,12 @@ Security features of the contracts:
 - All the contracts are public and verified on the blockchains, ensuring transparency and security.
 
 The vault is funded by 2 sources:
-- $BINDOWS volume: the token has a 1% buy tax and 3% sell tax, transferred automatically to the staking contract on each transaction. Staking rewards reflect automatically within the dApp.
+- $BINDOWS volume: the token has a 1% buy tax and 2% sell tax, transferred automatically to the staking contract on each transaction. Staking rewards reflect automatically within the dApp.
 - Mixing volume: whenever someone mix some tokens into the protocol (using one of the $BINDOWS mixing pools), half of the 1% fee taken from the deposits is transferred to the staking contract.
 
-So whenever someone buys, sells or mix $BINDOWS, a share of the transaction directly funds the stakers, thus allowing non-inflationary farming.
+So whenever someone buys, sells or mix $BINDOWS, a share of the transaction directly funds the stakers (BNB coins), thus allowing non-inflationary farming.
 
-The full source code of BindowsCash contracts is available in Staking.sol file. Here is the official deployment address of the staking contract on BSC:
+The full source code of BindowsCash contracts is available in BindowsVaultV2.sol file. Here is the official deployment address of the staking contract on BSC:
 
 ## BSC Mainnet
 
