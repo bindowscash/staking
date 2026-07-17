@@ -22,4 +22,4 @@ The full source code of BindowsCash contracts is available in Staking.sol file. 
 
 ## BSC Mainnet
 
-    Staking contract: 0xE75eB24177CeabAfA957ECd117066ed71C500b44
+    Staking contract: 0x13551B25C11D2A652b34721A96708Cb10B12a55C
