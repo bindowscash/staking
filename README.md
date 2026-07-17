@@ -17,8 +17,7 @@ Security features of the contracts:
 - Variables are hardcoded (cannot be changed)
 - Addresses are hardcoded (cannot be changed)
 - Deposits/withdrawals cannot be paused or cancelled by a third-party
-- The contracts cannot self-destruct, and cannot be called via a delegatecall.
-- The contracts are not deployed behind a proxy, so they are not immutable and not upgradeable.
+- The contracts cannot self-destruct
 - Users can either withdraw their rewards only, or their staked tokens + their rewards within one transaction.
 - Reentrancy guard enabled
 - There is no expiration on deposits/withdrawals. Users can stake or unstake whenever they want.
@@ -30,8 +29,9 @@ The vault is funded by 2 sources:
 
 So whenever someone buys, sells or mix $BINDOWS, a share of the transaction directly funds the stakers (BNB coins), thus allowing non-inflationary farming.
 
-The full source code of BindowsCash contracts is available in BindowsVaultV2.sol file. Here is the official deployment address of the staking contract on BSC:
+The full source code of BindowsCash contracts is available in ERC1967Proxy.sol and BindowsVaultV2Upgradeable.sol files. Here is the official deployment addresses of the staking contract on BSC:
 
 ## BSC Mainnet
 
-    Staking contract: 0x13551B25C11D2A652b34721A96708Cb10B12a55C
+    ERC1967Proxy: 0x13551B25C11D2A652b34721A96708Cb10B12a55C
+    BindowsVaultV2Upgradeable: 0xfC00b22789F10bd79667d4eC3d2E4947f7Af8332
