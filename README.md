@@ -14,7 +14,7 @@ Security features of the contracts:
 
 The vault is funded by 2 sources:
 - $BINDOWS volume: the token has a 1% buy tax and 3% sell tax, transferred automatically to the staking contract on each transaction. Staking rewards reflect automatically within the dApp.
-- Mixing volume: whenever someone mix some tokens into the protocol, a 1% fee is taken on the deposits, transferred to the staking contract.
+- Mixing volume: whenever someone mix some tokens into the protocol (using one of the $BINDOWS mixing pools), half of the 1% fee taken from the deposits is transferred to the staking contract.
 
 So whenever someone buys, sells or mix $BINDOWS, a share of the transaction directly funds the stakers, thus allowing non-inflationary farming.
 
