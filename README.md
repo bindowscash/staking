@@ -2,6 +2,16 @@
 
 BindowsCash is not only a mixer, but it allows $BINDOWS holders to stake their tokens into the vault.
 
+Key Features & Specifications of the staking contract:
+- Post-Deployment Token Binding: The staking token address is initialized once by the developer after deployment.
+- Real-Time Global Ratio Accounting: Uses an optimized Synthetix-style algorithm (O(1) gas complexity) to track and 
+  distribute incoming reward transfers proportionally without looping through users.
+- Automatic Compound & Claims: Unstaking (withdrawing) automatically claims and transfers any accrued rewards.
+- Double-Spend & Reentrancy Protection: Implements a strict Check-Effects-Interactions pattern, deducting user balances
+  before executing external transfers, combined with an active reentrancy guard.
+- Developer Fee: A 5% protocol fee is automatically deducted from all claimed rewards (during direct claims or withdrawals)
+  and sent directly to the development fund.
+
 Security features of the contracts:
 - Variables are hardcoded (cannot be changed)
 - Addresses are hardcoded (cannot be changed)
@@ -9,6 +19,7 @@ Security features of the contracts:
 - The contracts cannot self-destruct, and cannot be called via a delegatecall.
 - The contracts are not deployed behind a proxy, so they are not immutable and not upgradeable.
 - Users can either withdraw their rewards only, or their staked tokens + their rewards within one transaction.
+- Reentrancy guard enabled
 - There is no expiration on deposits/withdrawals. Users can stake or unstake whenever they want.
 - All the contracts are public and verified on the blockchains, ensuring transparency and security.
 
